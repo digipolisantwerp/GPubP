@@ -6,13 +6,15 @@ Het **G**eneriek **Pub**licatie **P**latform - GPubP - is een verzameling van bo
 
 ### Wat staat er hier ?
 
-Alle core platform componenten staan hier op GitHub (to do). Contributies in allerlei vormen worden van hieruit gelinkt.
-
-> **Status:** Momenteel is er een oefening bezig hoe we de code hier op GitHub gaan plaatsen. Contacteer erik.lenaerts@digipolis.be voor meer info.
+**Note: **Alle platform componenten staan momenteel nog op BitBucket van Digipolis, wil je meer weten hierover, contacteer dan erik.lenaerts@digipolis.be.
 
 ### Voor wie is dit ?
-Ontwikkelaars en andere technische mensen die mee werken aan de bouw van het platform zelf. Wil hje gebruik maken van het Platform voor jouw project, dan is het [ACPaaS Portaal de plaats waar je meer info vindt](https://acpaas.digipolis.be/nl/product/generiek-publicatie-platform)
+Ontwikkelaars en andere technische mensen die mee werken aan de bouw van het platform zelf. Wil je eerder gebruik maken van het Platform voor jouw project, dan is het [ACPaaS Portaal de plaats waar je meer info vindt](https://acpaas.digipolis.be/nl/product/generiek-publicatie-platform)
 
-## Repositories
+Dus: 
+- [GitHub](#generiek-publicatie-platform) : voor ontwikkelaars van het GPubP
+- [ACPaaS Portal](https://acpaas.digipolis.be/nl/product/generiek-publicatie-platform) : voor afnemers van het GPubP
 
-todo
+### Wat vind je hier ?
+
+Todo: oplijsting van de repositories
