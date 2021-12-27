@@ -5,7 +5,7 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
 - [![Generic badge](https://img.shields.io/badge/Core|Contrib-gray.svg)]() Gaat de release over de core of over een contributie module.
 -  [![Generic badge](https://img.shields.io/badge/Core|Contrib-DEV-yellow.svg)]() zijn alle features die momenteel ontwikkeld worden en nog niet beschikbaar zijn.
 - [![Generic badge](https://img.shields.io/badge/Core|Contrib-ACC-blue.svg)](https://redactie-a.antwerpen.be) zijn alle features die we momenteel aan't testen zijn. Deze zullen weldra gereleased worden.
-- [![Generic badge](https://img.shields.io/badge/Core|Contrib-PRD-green.svg)](https://redactie.antwerpen.be) zijn alle features die publiek beschikbaar zijn op https://redactie.antwerpen.be
+- [![Generic badge](https://img.shields.io/badge/Core|Contrib-PRD-green.svg)](https://redactie.antwerpen.be) zijn alle features die gereleased zijn voor gebruik https://redactie.antwerpen.be
 
 *The formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), en maakt gebruik van [Semantic Versioning](https://semver.org/spec/v2.0.0.html).* 
 
