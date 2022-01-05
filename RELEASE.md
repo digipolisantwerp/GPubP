@@ -4,8 +4,8 @@ Hier vind je de release notes van **GPubP - Content beheer**, één van de onder
 De release notes zijn chronologisch gesorteerd met de meeste recente release eerst. De badges geven aan over welk onderdeel het gaan en in welk stadia het zich bevindt. 
 - [![Generic badge](https://img.shields.io/badge/Core|Contrib-gray.svg)]() Gaat de release over de core of over een contributie module.
 -  [![Generic badge](https://img.shields.io/badge/Core|Contrib-DEV-yellow.svg)]() zijn alle features die momenteel ontwikkeld worden en nog niet beschikbaar zijn.
-- [![Generic badge](https://img.shields.io/badge/Core|Contrib-ACC-blue.svg)](https://redactie-a.antwerpen.be) zijn alle features die we momenteel aan't testen zijn. Deze zullen weldra gereleased worden.
-- [![Generic badge](https://img.shields.io/badge/Core|Contrib-PRD-green.svg)](https://redactie.antwerpen.be) zijn alle features die publiek beschikbaar zijn op https://redactie.antwerpen.be
+- [![Generic badge](https://img.shields.io/badge/Core|Contrib-ACC-blue.svg)]() zijn alle features die we momenteel aan't testen zijn. Deze zullen weldra gereleased worden.
+- [![Generic badge](https://img.shields.io/badge/Core|Contrib-PRD-green.svg)]() zijn alle features die gereleased zijn voor gebruik.
 
 *The formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), en maakt gebruik van [Semantic Versioning](https://semver.org/spec/v2.0.0.html).* 
 
@@ -20,7 +20,7 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
     - Audio component met ondersteuning voor SoundCloud
     - Location picker widget improvements 
 
-## [4.1.5]: 2022-01-10 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)](https://redactie.antwerpen.be)
+## [4.1.5]: 2022-01-10 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15735).
 ### Changed
 -   **Algemeen:** Verbeterde copy doorheen de applicatie
@@ -53,7 +53,7 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
 ## 2021-12-23  [![Generic badge](https://img.shields.io/badge/Tabel%20Contrib-PRD-green.svg)]()
 - De Tabel module is beschikbaar op Productie.
 
-## [4.1.2]: 2021-12-14 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)](https://redactie.antwerpen.be)
+## [4.1.2]: 2021-12-14 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15538).
 ### Added
 -  **Algemeen:** Visuele feedback bij het kopiëren van een UUID
