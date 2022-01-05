@@ -20,15 +20,25 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
     - Audio component met ondersteuning voor SoundCloud
     - Location picker widget improvements 
 
-	
-## 2021-12-24 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)](https://redactie-a.antwerpen.be)
+## [4.1.5]: 2022-01-10 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)](https://redactie.antwerpen.be)
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15735).
 ### Changed
--  **Content:** Het invoeren van content zal iets 'rustiger' worden qua stijl (lettertype groottes worden beter afgestemd)
+-   **Algemeen:** Verbeterde copy doorheen de applicatie
+-  **Content** 
+	- Autocomplete bij het zoeken naar een content referentie (interne link) vlotter gemaakt. 
+	- De filter op datum in het Content overzicht werkt nu op laatst bijgewerkt (ipv publicatiedatum)
+	- Het verwijderen van een filter in het content overzicht werkt vlotter
+	- Het invoeren van content zal iets 'rustiger' worden qua stijl (lettertype groottes worden beter afgestemd)
 
 ### Fixed
--  **API:** Interne linken die gelegd worden in een Tekstvak met opmaak worden nu volwaardig door de API geleverd. 
+-  **API**
+	- Views filteren via de API is uitgebreid, [zie hier voor de mogelijkheden](https://docs.google.com/spreadsheets/d/1pylW8fwLd0IxLAyQ7WaYRH6sbRow7xsv8lRZSUXf3-k/edit#gid=0).
+	- Interne linken die gelegd worden in een Tekstvak met opmaak worden nu volwaardig door de API geleverd. 
 -  **Content** 
+	- Boodschap netjes gezet wanneer je een UUID kopiëert.
+	- WCAG compliancy optie bij bestanden wordt nu correct gevalideerd
+	- Hulpteksten van invoervelden beter uitgelijnd
+	- Een content component verwijderen van een content type en daarna terug toevoegen (obv een ander content component) is verbeterd. 
     - Wanneer validatie foutboodschappen uit beeld voorkwamen zag je ze niet staan. Nu zal het systeem naar boven/onder scrollen bij het bewaren van een content en zo de fout in beeld brengen.  
     - Editeren van een component in een Paragraaf op een content type zal geen crash meer veroorzaken. (Wit scherm aka WSOD)
 -  **Navigatie:** Een content item in de navigatieboom hangen is nu verbeterd voor kleinere schermen. 
@@ -36,30 +46,12 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
     -  De rollen op tenant zijn terug zichtbaar, zo kan de rol Content Beheerder opnieuw uitgedeeld worden.
     -  Gebruikers zonder een tenant rol (tenant of content beheerder), kunnen nu ook bestanden uploaden.
 -  **Workflow:** Een content item met een status dat niet in de workflow voorkomt zal geen crash meer veroorzaken. (Wit scherm aka WSOD)
--  **Workflow:** Je kan nu een workflow correct verwijderen op site niveau.
+-  **Workflow** 
+   - Je kan nu een workflow correct verwijderen op site niveau.
+   - Als je een transitie maakt naar dezelfde status, bv van Werkversie naar Werkversie dan worden nu de rechten en de workflow configuratie correct nageleefd.
 
 ## 2021-12-23  [![Generic badge](https://img.shields.io/badge/Tabel%20Contrib-PRD-green.svg)]()
 - De Tabel module is beschikbaar op Productie.
-
-## 2021-12-15 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)](https://redactie-a.antwerpen.be)
-Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15538).
-### Changed
--   **Algemeen** 
-	- Verbeterde copy doorheen de applicatie
--  **Content** 
-	- Autocomplete bij het zoeken naar een content referentie (interne link) vlotter gemaakt. 
-	- De filter op datum in het Content overzicht werkt nu op laatst bijgewerkt (ipv publicatiedatum)
-	- Het verwijderen van een filter in het content overzicht werkt vlotter
-
-### Fixed
--  **API**
-	- Views filteren via de API is uitgebreid, [zie hier voor de mogelijkheden](https://docs.google.com/spreadsheets/d/1pylW8fwLd0IxLAyQ7WaYRH6sbRow7xsv8lRZSUXf3-k/edit#gid=0).
--  **Content** 
-	- Boodschap netjes gezet wanneer je een UUID kopiëert.
-	- WCAG compliancy optie bij bestanden wordt nu correct gevalideerd
-	- Hulpteksten van invoervelden beter uitgelijnd
-	- Een content component verwijderen van een content type en daarna terug toevoegen (obv een ander content component) is verbeterd. 
-- **Workflow:** Als je een transitie maakt naar dezelfde status, bv van Werkversie naar Werkversie dan worden nu de rechten en de workflow configuratie correct nageleefd.
 
 ## [4.1.2]: 2021-12-14 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)](https://redactie.antwerpen.be)
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15538).
