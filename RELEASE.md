@@ -11,14 +11,27 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
 
 ## [Unreleased] [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
 -  **Content** 
-	- Configuratie waarbij werken met afbeeldingen en linken in een Tekstvak met opmaak per profiel bepaald kan worden 
 	- Tekstlijn component krijgt een extra configuratie optie waarmee je een masker kan invoeren
-	- De adres component zal een extra optie krijgen waarbij je per content type kan bepalen of er met beelden en linken gewerkt kan worden.
 	- Alle autocomplete velden zullen een 'clear' (x) optie krijgen zodat je een nieuwe zoek kan lanceren in de lijst
-	- Voor componenten die bestaan uit waardelijsten (key/value) zoals keuzerondjes, keuzelijsten, etc, kan je de data ervan eenvoudig importeren
 	- Een nieuw Formulier Referentie content component waarmee je een formulier kan kiezen dat gemaakt is via de [Form Composer](https://formcomposer.antwerpen.be). 
-    - Audio component met ondersteuning voor SoundCloud
     - Location picker widget improvements 
+
+## [4.2.0]: 2022-01-13 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
+Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
+### Added
+-  **Content** 
+	- Configuratie waarbij werken met afbeeldingen en linken in een Tekstvak met opmaak per profiel bepaald kan worden 
+    - Audio component met ondersteuning voor SoundCloud
+	- Voor componenten die bestaan uit waardelijsten (key/value) zoals keuzerondjes, keuzelijsten, etc, kan je de data ervan eenvoudig importeren
+	- Bij een adres component kan je nu instellen met welke lagen deze werkt. Zo kan je één of meerdere lagen kiezen e.g. parket, districten, pleinen, ...
+
+### Fixed
+-  **API:** Content item dat niet gevonden werd resulteerd nu in een HTTP 404 in plaats van een HTTP 400.
+-  **Navigatie:** Glitches weggewerkt wanneer een content item in de navigatieboom geregistreerd wordt.
+-  **Workflow:** Verbetering bij de selectielijst voor een status van een workflow.
+-  **Rollen & Rechten:** Gebruikers die via UM een rol krijgen worden nu sneller aan De Redactie toegevoegd
+
+
 
 ## [4.1.5]: 2022-01-10 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15735).
@@ -51,7 +64,8 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
    - Als je een transitie maakt naar dezelfde status, bv van Werkversie naar Werkversie dan worden nu de rechten en de workflow configuratie correct nageleefd.
 
 ## 2021-12-23  [![Generic badge](https://img.shields.io/badge/Tabel%20Contrib-PRD-green.svg)]()
-- De Tabel module is beschikbaar op Productie.
+- De Tabel module is beschikbaar op Productie. Met deze module kan je een tabel toevoegen aan de content. Merk op dat dit een losstaande content component is en niet een onderdeel van een Tekstvak met Opmaak. Je bepaalt zelf de rijen en kolommen en geeft op wat je in elke cell wil plaatsen zoals bv een tekstvak, een telefoonnummer, etc.
+
 
 ## [4.1.2]: 2021-12-14 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15538).
