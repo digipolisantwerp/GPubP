@@ -10,13 +10,16 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
 *The formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), en maakt gebruik van [Semantic Versioning](https://semver.org/spec/v2.0.0.html).* 
 
 ## [Unreleased] [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+-  **API:** Bij gebruik van een paragraaf zal er in de payload (meta) van een Content Item een `componentType` en `componentName` uitkomen die respectievelijk het type en de systeemnaam van dat Content Component in de paragraaf bevat. 
 -  **Content** 
-	- Tekstlijn component krijgt een extra configuratie optie waarmee je een masker kan invoeren
-	- Alle autocomplete velden zullen een 'clear' (x) optie krijgen zodat je een nieuwe zoek kan lanceren in de lijst
 	- Een nieuw Formulier Referentie content component waarmee je een formulier kan kiezen dat gemaakt is via de [Form Composer](https://formcomposer.antwerpen.be). 
     - Location picker widget improvements 
+    - De naam van een content component dat gezet wordt in een paragraaf zal correct bewaard worden
+    - Aanpassingen aan de opties van keuzelijst zorgde voor problemen bij bestaande content items die daarmee werken
+    - Externe toepassingen kunnen content schrijven en aanpassen
+    - Als redacteur kan je de keuze die je maakte in een keuzelijst eenvoudig 'clearen'.
 
-## [4.2.0]: 2022-01-13 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
+## [4.2.0]: 2022-01-21 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
 ### Added
 -  **Content** 
@@ -24,12 +27,27 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
     - Audio component met ondersteuning voor SoundCloud
 	- Voor componenten die bestaan uit waardelijsten (key/value) zoals keuzerondjes, keuzelijsten, etc, kan je de data ervan eenvoudig importeren
 	- Bij een adres component kan je nu instellen met welke lagen deze werkt. Zo kan je één of meerdere lagen kiezen e.g. parket, districten, pleinen, ...
+	- Tekstlijn component krijgt een extra configuratie optie waarmee je een masker kan invoeren. Handig voor o.a bankrekening nummers, rijksregister nummers, personeel codes, etc.
+	- Alle autocomplete velden zullen een 'clear' (x) optie krijgen zodat je een nieuwe zoek kan lanceren in de lijst
+-  **Rollen & Rechten:** Vaak zijn er externe toepassingen die content willen toevoegen of aanpassen via de API. Hiervoor is er een nieuw type gebruiker `acpaasConsumerApplications` in de Redactie. Gebruikers van dit type zijn geen individueen of personen maar stellen eerder een toepassing voor. Zo kunnen we met het rollen en rechten systeem ook fijnmazig bepalen wat welke toepassing mag doen. 
+
+### Changed
+-  **Content** 
+   -  We hebben het navigeren met de browser back knop verbeterd. Wanneer je een filter hanteert op het content overzicht, zal deze onthouden worden wanneer je hier naar terugkeert. 
 
 ### Fixed
 -  **API:** Content item dat niet gevonden werd resulteerd nu in een HTTP 404 in plaats van een HTTP 400.
+-  **Content** 
+   -  Wanneer je een compartiment maakte met de naam `status` gaf dit een fout.
+   -  Wijzigingen aan een Custom Content Component worden nu correct weerspiegeld in Content Types ook al zitten ze dieperliggend in geneste paragrafen.
 -  **Navigatie:** Glitches weggewerkt wanneer een content item in de navigatieboom geregistreerd wordt.
--  **Workflow:** Verbetering bij de selectielijst voor een status van een workflow.
+-  **Workflow** 
+   -  Verbetering bij de selectielijst voor een status van een workflow.
+   -  Het verwijderen van een status is nu mogelijk (zonder harde refresh)
+   -  Transities worden geladen, ook voor gebruikers zonder de nodige rechten
 -  **Rollen & Rechten:** Gebruikers die via UM een rol krijgen worden nu sneller aan De Redactie toegevoegd
+-  **Site:** Success boodschap werd bij de site op de verkeerde plaats getoond
+-  **Systeem:** Redactie monitor endpoint geeft nu geen errors meer
 
 
 
