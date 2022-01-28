@@ -19,6 +19,22 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
     - Externe toepassingen kunnen content schrijven en aanpassen
     - Als redacteur kan je de keuze die je maakte in een keuzelijst eenvoudig 'clearen'.
 
+## [4.2.1]: 2022-01-28 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
+Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
+### Added
+-  **API:** Content schrijven kan via de WCM Content Manager API op [deze manier](https://docs.google.com/document/d/1cMGpDkgqBnVhzlr7nr00YK8xciIESvIX1YmffqT6VzE/edit#heading=h.xhcpij33fl32).
+  
+### Fixed
+-  **Content** 
+	- De systeemnaam wordt nu correct overgenomen van de naam bij het toevoegen van een component aan een paragraaf
+	- Verbetering wanneer je een eerdere keuze ongedaan maakt bij keuzelijsten.
+	- De Video embed kan opnieuw gebruikt worden in een paragraaf component.
+	- Broodkruimel en labels worden nu correct getoond bij gebruik van een content blok
+	- Het werken met een zoekbereik is nu ook voorzien op een Adres content component. Dit was voordien enkel beschikbaar bij een Locatie content component.
+	- De rollen die toegekend worden in een workflow zullen nu het bewerk icon niet overschrijven in de user interface
+	- Bij het aanmaken van content is de lijst van beschikbare content types en blokken nu correct sorteerbaar.
+
+
 ## [4.2.0]: 2022-01-21 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
 ### Added
