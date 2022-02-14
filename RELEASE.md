@@ -10,22 +10,44 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
 *The formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), en maakt gebruik van [Semantic Versioning](https://semver.org/spec/v2.0.0.html).* 
 
 ## [Unreleased] [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
--  **API:** Bij gebruik van een paragraaf zal er in de payload (meta) van een Content Item een `componentType` en `componentName` uitkomen die respectievelijk het type en de systeemnaam van dat Content Component in de paragraaf bevat. 
 -  **Content** 
-	- Een nieuw Formulier Referentie content component waarmee je een formulier kan kiezen dat gemaakt is via de [Form Composer](https://formcomposer.antwerpen.be). 
     - Location picker widget improvements 
-    - De naam van een content component dat gezet wordt in een paragraaf zal correct bewaard worden
     - Aanpassingen aan de opties van keuzelijst zorgde voor problemen bij bestaande content items die daarmee werken
-    - Externe toepassingen kunnen content schrijven en aanpassen
-    - Als redacteur kan je de keuze die je maakte in een keuzelijst eenvoudig 'clearen'.
 
-## [4.2.1]: 2022-01-28 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
+## [4.3.1]: 2022-05-02
+MTP Planned
+
+## [4.3.0]: 2022-03-28
+MTP Planned
+
+
+## [4.2.1]: 2022-02-14 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
 ### Added
--  **API:** Content schrijven kan via de WCM Content Manager API op [deze manier](https://docs.google.com/document/d/1cMGpDkgqBnVhzlr7nr00YK8xciIESvIX1YmffqT6VzE/edit#heading=h.xhcpij33fl32).
-  
-### Fixed
+-  **API** 
+   -  Content schrijven kan via de WCM Content Manager API op [deze manier](https://docs.google.com/document/d/1cMGpDkgqBnVhzlr7nr00YK8xciIESvIX1YmffqT6VzE/edit#heading=h.xhcpij33fl32).
+   -  Bij gebruik van een paragraaf zal er in de payload (meta) van een Content Item een `componentType` en `componentName` uitkomen die respectievelijk het type en de systeemnaam van dat Content Component in de paragraaf bevat.
 -  **Content** 
+	- Extra configuratie opties voor een `Tekstvak met Opmaak`. Je kan nu bepalen of er met afbeeldingen of interne linken gewerkt mag worden. ([Meer info](https://docs.google.com/document/d/19RHSpMWIhUoD4ST7d4fvd1Z-mqxb14shNrsly_mDGs4/edit#heading=h.i6gktat17chj))
+	- Een nieuw `Formulier Referentie` content component waarmee je een formulier kan kiezen dat gemaakt is via de Form Composer. ([Meer info](https://docs.google.com/document/d/19RHSpMWIhUoD4ST7d4fvd1Z-mqxb14shNrsly_mDGs4/edit#heading=h.imvkzfzdczxy))
+    - Audio component met ondersteuning voor SoundCloud. ([Meer info](https://docs.google.com/document/d/19RHSpMWIhUoD4ST7d4fvd1Z-mqxb14shNrsly_mDGs4/edit#heading=h.awwnu5ldhyxd))
+	- Voor componenten die bestaan uit `waardelijsten` (key/value) zoals keuzerondjes, keuzelijsten, etc, kan je de data ervan eenvoudig `importeren` in de Redactie.
+	- Een extra configuratie optie voor `adres/locatie` component waar je nu het zoekbereik kan instellen zoals zoeken in adres, straatnamen, districten, pleinen, ... ([Meer info](https://docs.google.com/document/d/19RHSpMWIhUoD4ST7d4fvd1Z-mqxb14shNrsly_mDGs4/edit#heading=h.xsig90b1a2in))
+	- `Tekstlijn` component krijgt extra configuratie opties waarmee je een `masker` kan invoeren. Handig voor o.a bankrekening nummers, rijksregister nummers, personeel codes, etc.
+	- Alle autocomplete velden zullen een 'clear' (x) optie krijgen zodat je een nieuwe zoek kan lanceren in de lijst
+	- Content kan nu met een `uitgifte datum` gepubliceerd worden. Deze is verschillend van de publicatiedatum. De eerste kan in het verleden gezet worden om zo historische content te kunnen overzetten in de Redactie. De laatste is altijd de effectieve systeemdatum wanneer iets gepubliceerd wordt. 
+-  **Rollen & Rechten:** Vaak zijn er externe toepassingen die content willen toevoegen of aanpassen via de API. Hiervoor is er een nieuw type gebruiker `acpaasConsumerApplications` in de Redactie. Gebruikers van dit type zijn geen individueen of personen maar stellen eerder een toepassing voor. Zo kunnen we met het rollen en rechten systeem ook fijnmazig bepalen wat welke toepassing mag doen. 
+
+### Changed
+-  **Content** 
+   -  We hebben het navigeren met de browser back knop verbeterd. Wanneer je een filter hanteert op het content overzicht, zal deze onthouden worden wanneer je hier naar terugkeert. 
+    - Als redacteur kan je de keuze die je maakte in een keuzelijst eenvoudig 'clearen'.
+
+### Fixed
+-  **API:** Content item dat niet gevonden werd resulteerd nu in een HTTP 404 in plaats van een HTTP 400.
+-  **Content** 
+   -  Wanneer je een compartiment maakte met de naam 'status' gaf dit een fout.
+   -  Wijzigingen aan een Custom Content Component worden nu correct weerspiegeld in Content Types ook al zitten ze dieperliggend in geneste paragrafen.
 	- De systeemnaam wordt nu correct overgenomen van de naam bij het toevoegen van een component aan een paragraaf
 	- Verbetering wanneer je een eerdere keuze ongedaan maakt bij keuzelijsten.
 	- De Video embed kan opnieuw gebruikt worden in een paragraaf component.
@@ -33,29 +55,7 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
 	- Het werken met een zoekbereik is nu ook voorzien op een Adres content component. Dit was voordien enkel beschikbaar bij een Locatie content component.
 	- De rollen die toegekend worden in een workflow zullen nu het bewerk icon niet overschrijven in de user interface
 	- Bij het aanmaken van content is de lijst van beschikbare content types en blokken nu correct sorteerbaar.
-
-
-## [4.2.0]: 2022-01-21 [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
-Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
-### Added
--  **Content** 
-	- Configuratie waarbij werken met afbeeldingen en linken in een Tekstvak met opmaak per profiel bepaald kan worden 
-    - Audio component met ondersteuning voor SoundCloud
-	- Voor componenten die bestaan uit waardelijsten (key/value) zoals keuzerondjes, keuzelijsten, etc, kan je de data ervan eenvoudig importeren
-	- Bij een adres component kan je nu instellen met welke lagen deze werkt. Zo kan je één of meerdere lagen kiezen e.g. parket, districten, pleinen, ...
-	- Tekstlijn component krijgt een extra configuratie optie waarmee je een masker kan invoeren. Handig voor o.a bankrekening nummers, rijksregister nummers, personeel codes, etc.
-	- Alle autocomplete velden zullen een 'clear' (x) optie krijgen zodat je een nieuwe zoek kan lanceren in de lijst
--  **Rollen & Rechten:** Vaak zijn er externe toepassingen die content willen toevoegen of aanpassen via de API. Hiervoor is er een nieuw type gebruiker `acpaasConsumerApplications` in de Redactie. Gebruikers van dit type zijn geen individueen of personen maar stellen eerder een toepassing voor. Zo kunnen we met het rollen en rechten systeem ook fijnmazig bepalen wat welke toepassing mag doen. 
-
-### Changed
--  **Content** 
-   -  We hebben het navigeren met de browser back knop verbeterd. Wanneer je een filter hanteert op het content overzicht, zal deze onthouden worden wanneer je hier naar terugkeert. 
-
-### Fixed
--  **API:** Content item dat niet gevonden werd resulteerd nu in een HTTP 404 in plaats van een HTTP 400.
--  **Content** 
-   -  Wanneer je een compartiment maakte met de naam `status` gaf dit een fout.
-   -  Wijzigingen aan een Custom Content Component worden nu correct weerspiegeld in Content Types ook al zitten ze dieperliggend in geneste paragrafen.
+    - De naam van een content component dat gezet wordt in een paragraaf zal correct bewaard worden
 -  **Navigatie:** Glitches weggewerkt wanneer een content item in de navigatieboom geregistreerd wordt.
 -  **Workflow** 
    -  Verbetering bij de selectielijst voor een status van een workflow.
@@ -64,7 +64,6 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
 -  **Rollen & Rechten:** Gebruikers die via UM een rol krijgen worden nu sneller aan De Redactie toegevoegd
 -  **Site:** Success boodschap werd bij de site op de verkeerde plaats getoond
 -  **Systeem:** Redactie monitor endpoint geeft nu geen errors meer
-
 
 
 ## [4.1.5]: 2022-01-10 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
