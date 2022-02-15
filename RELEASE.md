@@ -21,6 +21,20 @@ MTP Planned
 MTP Planned
 
 
+Hotfix
+17/2
+
+24/2
+
+RED-1922
+RED-1972
+
+## [4.2.1.P02]: 2022-02-24 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+
+## [4.2.1.P01]: 2022-02-17 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+-  **Navigatie:** Er is een issue ontdekt waarbij redacteurs hun navigatieboom niet meer kunnen kiezen in de keuzelijst. De dropdown toont enkel de eerste 10 entries. We gaan hier in de hotfix zorgen dat er 20 items opgehaald worden, een betere oplossing staat op de backlog weliswaar. Hiermee kunnen de afnemers vandaag meteen verder.  
+
+
 ## [4.2.1]: 2022-02-14 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
 ### Added
@@ -29,6 +43,7 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
    -  Bij gebruik van een paragraaf zal er in de payload (meta) van een Content Item een `componentType` en `componentName` uitkomen die respectievelijk het type en de systeemnaam van dat Content Component in de paragraaf bevat.
 -  **Content** 
 	- Extra configuratie opties voor een `Tekstvak met Opmaak`. Je kan nu bepalen of er met afbeeldingen of interne linken gewerkt mag worden. ([Meer info](https://docs.google.com/document/d/19RHSpMWIhUoD4ST7d4fvd1Z-mqxb14shNrsly_mDGs4/edit#heading=h.i6gktat17chj))
+		> **Migratie!** Content Beheerders gaan alle Tekstvak met Opmaak content componenten moeten herconfigureren en een keuze maken van deze nieuwe opties. De content zelf moet niet gemigreerd worden.
 	- Een nieuw `Formulier Referentie` content component waarmee je een formulier kan kiezen dat gemaakt is via de Form Composer. ([Meer info](https://docs.google.com/document/d/19RHSpMWIhUoD4ST7d4fvd1Z-mqxb14shNrsly_mDGs4/edit#heading=h.imvkzfzdczxy))
     - Audio component met ondersteuning voor SoundCloud. ([Meer info](https://docs.google.com/document/d/19RHSpMWIhUoD4ST7d4fvd1Z-mqxb14shNrsly_mDGs4/edit#heading=h.awwnu5ldhyxd))
 	- Voor componenten die bestaan uit `waardelijsten` (key/value) zoals keuzerondjes, keuzelijsten, etc, kan je de data ervan eenvoudig `importeren` in de Redactie.
