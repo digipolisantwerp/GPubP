@@ -14,24 +14,18 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
     - Location picker widget improvements 
     - Aanpassingen aan de opties van keuzelijst zorgde voor problemen bij bestaande content items die daarmee werken
 
-## [4.3.1]: 2022-05-02
-MTP Planned
+## [4.3.1]: 2022-05-02 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+Deze MTP zal vooral bestaan uit navigatie URl en broodkruimel functionaliteiten 
 
-## [4.3.0]: 2022-03-28
-MTP Planned
+## [4.3.0]: 2022-03-28 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten
 
+## [4.2.1.hotfix-2]: 2022-02-24 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+- 2 fixes rond de nieuwe uitgiftedatum feature
+- een oplossing voor de migratie van de navigatieboom voor A-Stad
+- voorvertoning instelling werd correct bewaard maar verkeerd getoond op de UI
 
-Hotfix
-17/2
-
-24/2
-
-RED-1922
-RED-1972
-
-## [4.2.1.P02]: 2022-02-24 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
-
-## [4.2.1.P01]: 2022-02-17 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+## [4.2.1.hotfix-1]: 2022-02-17 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
 -  **Navigatie:** Er is een issue ontdekt waarbij redacteurs hun navigatieboom niet meer kunnen kiezen in de keuzelijst. De dropdown toont enkel de eerste 10 entries. We gaan hier in de hotfix zorgen dat er 20 items opgehaald worden, een betere oplossing staat op de backlog weliswaar. Hiermee kunnen de afnemers vandaag meteen verder.  
 
 
