@@ -27,7 +27,7 @@ Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten
 -  **Navigatie:** Fix waarbij we eenvoudige en éénmalig de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
 -  **Preview:** Fix waarbij de preview instelling op site niveau niet correct bewaard werd
 
-## [4.2.1.hotfix-1]: 2022-02-17 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+## [4.2.1.hotfix-1]: 2022-02-17 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
 -  **Navigatie:** Er is een issue ontdekt waarbij redacteurs hun navigatieboom niet meer kunnen kiezen in de keuzelijst. De dropdown toont enkel de eerste 10 entries. We gaan hier in de hotfix zorgen dat er 20 items opgehaald worden, een betere oplossing staat op de backlog weliswaar. Hiermee kunnen de afnemers vandaag meteen verder.  
 
 
