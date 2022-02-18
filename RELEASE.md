@@ -14,11 +14,28 @@ De release notes zijn chronologisch gesorteerd met de meeste recente release eer
     - Location picker widget improvements 
     - Aanpassingen aan de opties van keuzelijst zorgde voor problemen bij bestaande content items die daarmee werken
 
-## [4.3.1]: 2022-05-02 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
-Deze MTP zal vooral bestaan uit navigatie URl en broodkruimel functionaliteiten 
+## [4.3.1]: 2022-05 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+Deze MTP zal vooral bestaan uit navigatie URL en navigatiestructuur functionaliteiten:
+URL
+- Content beheerders kunnen een URL patroon instellen dat de basis vormt voor de URL's van de content items
+- Redacteurs kunnen - indien ze rechten ervoor hebben - afwijken van dit patroon
+- Ontwikkelaars zullen nooit meer URL's moeten samenstellen in code. De URL's zijn onderdeel van elk content item.
+Navigatiestructuren
+- Content beheerders stellen de navigatiestructuur in. Hiervoor kunnen ze gebruik maken van ofwel patronen ofwel een navigatieboom.
+- Content items worden hiermee soms in een navigatieboom gehangen en soms volgen ze regels van het patroon. Zo zal een redacteur een nieuwsbericht aanmaken en dmv het patroon weten we waar dit in de navigatiestructuur staat. Daarentegen zal de relatie tussen overzicht en infopagina's wel effectief door de redacteurs opgegeven worden. Zo hebben we best of both worlds en hoeven de redacteurs niets te doen (patronen) en daar waar ze willen kunnen ze content items héél specifiek een plek geven (navigatieboom) in de navigatiestructuur.
 
-## [4.3.0]: 2022-03-28 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
-Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten
+## [4.3.0]: 2022-03 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten: 
+- Maken en onderhouden van menu's
+- Menu's gaan meteen meertalig cases ondersteunen
+- Er kunnen interne linken, externe linken en tussentitels opgenomen worden in een menu 
+- Menu's zijn hiërarchisch waarbij menu items verhangen kunnen worden
+- Menu items onderling kunnen in volgorde gezet worden
+- Content beheerders bepalen uit welke menu's redacteurs mogen kiezen
+- Er kan vanuit het totale menu gewerkt worden (de boomstructuur) of vanuit één specifiek content item
+- Wie wat mag doen met menu's gaat via rollen en rechten ingesteld kunnen worden
+- Er wordt een API voorzien om menu data op te halen voor gebruik in de consumers/frontends.
+
 
 ## [4.2.1.hotfix-2]: 2022-02-24 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
 - **Content** 
