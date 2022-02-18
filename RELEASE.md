@@ -1,20 +1,46 @@
 # Release Notes GPubP - Content beheer 
-Hier vind je de release notes van **GPubP - Content beheer**, één van de onderdelen van het [Generiek Publicatie Platform](https://acpaas.digipolis.be/nl/product/generiek-publicatie-platform). 
 
-De release notes zijn chronologisch gesorteerd met de meeste recente release eerst. De badges geven aan over welk onderdeel het gaan en in welk stadia het zich bevindt. 
-- [![Generic badge](https://img.shields.io/badge/Core|Contrib-gray.svg)]() Gaat de release over de core of over een contributie module.
--  [![Generic badge](https://img.shields.io/badge/Core|Contrib-DEV-yellow.svg)]() zijn alle features die momenteel ontwikkeld worden en nog niet beschikbaar zijn.
-- [![Generic badge](https://img.shields.io/badge/Core|Contrib-ACC-blue.svg)]() zijn alle features die we momenteel aan't testen zijn. Deze zullen weldra gereleased worden.
-- [![Generic badge](https://img.shields.io/badge/Core|Contrib-PRD-green.svg)]() zijn alle features die gereleased zijn voor gebruik.
+Hier vind je de release notes van **GPubP - Content beheer** (aka De Redactie, aka WCMv4), één van de onderdelen van het [Generiek Publicatie Platform](https://acpaas.digipolis.be/nl/product/generiek-publicatie-platform). 
 
-*The formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), en maakt gebruik van [Semantic Versioning](https://semver.org/spec/v2.0.0.html).* 
+*Lees [hier meer](#legende) over het formaat en de structuur van deze release notes.*
 
-## [Unreleased] [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
--  **Content** 
-    - Location picker widget improvements 
-    - Aanpassingen aan de opties van keuzelijst zorgde voor problemen bij bestaande content items die daarmee werken
+## Index
+| Release 	| Datum 	| Inhoud 	| Status 	|
+|---	|---	|---	|---	|
+| [4.4.1](#441-2022) 	| 2022 	| Bynder Beeldenbank en Chat ondersteuning | [![Generic badge](https://img.shields.io/badge/Contrib-TODO-teal.svg)]() 	|
+| [4.4.0](#440-2022) 	| 2022 	| Meertaligheid 	| [![Generic badge](https://img.shields.io/badge/Core-TODO-teal.svg)]() 	|
+| [4.3.1](#431-2022-05) 	| Mei 2022 	| Werken met Navigatie URL's en Navigatiestructuur 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.3.0](#430-2022-03) 	| Maart 2022 	| Werken met Navigatie Menu's 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [1.0.0](#100-2022-03) 	| Maart 2022 	| Verzendmodule voor (o.a.) nieuwsbrieven 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
+| [1.0.0](#100-2022-03) 	| Maart 2022 	| Logboek module 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
+| [4.2.1.hotfix-2](#421hotfix-2-2022-02-24) 	| 24 feb 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.2.1.hotfix-1](#421hotfix-1-2022-02-17) 	| 17 feb 2022 	| Fix voor werken met 10+ navigatiebomen 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
+| [4.2.1](#421-2022-02-14) 	| 14 Feb 2022 	| Uitbreidingen voor PZA 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
+| [4.1.5](#415-2022-01-10) 	| 10 Jan 2022 	| Rubens release voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
+| [1.0.0](#100-2021-12-23) 	| 23 Jan 2022 	| Tabel content component 	| [![Generic badge](https://img.shields.io/badge/Contrib-PROD-Green.svg)]() 	|
+| [4.1.2](#412-2021-12-14) 	| 14 dec 2021 	| MVP Release 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
 
-## [4.3.1]: 2022-05 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+---
+
+## [4.4.1]: 2022
+[![Generic badge](https://img.shields.io/badge/Contrib-TODO-teal.svg)]()
+- Beelden in [Bynder](https://www.bynder.com/) kunnen gekozen worden door de redacteur rechtstreeks uit de Redactie.
+- [Teleportel](https://www.teleportel.com/) ondersteuning
+
+## [4.4.0]: 2022
+[![Generic badge](https://img.shields.io/badge/Core-TODO-teal.svg)]()
+- Per site configureer je de talen
+- Allerlei instellingen zoals de site url, preview url gaan taalgevoelig worden
+- Content beheerders bepalen welke content componenten van een content type vertaalbaar zijn en welke niet.
+- Redacteurs werken aan content voor een specifieke taal. 
+- Een content item wordt gemaakt in een bepaalde taal. Heb je 4 vertalingen, dan zijn dit 4 content items
+- Er komt een taalaaduiding in het content overzicht
+- Bij het maken van een nieuw content item moet eerst nog een taalkeuze gemaakt worden.
+- Per content item kan je eenvoudig zien in welke talen dit reeds vertaald is.
+
+## [4.3.1]: 2022-05 
+[![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+
 Deze MTP zal vooral bestaan uit navigatie URL en navigatiestructuur functionaliteiten:
 URL
 - Content beheerders kunnen een URL patroon instellen dat de basis vormt voor de URL's van de content items
@@ -24,7 +50,9 @@ Navigatiestructuren
 - Content beheerders stellen de navigatiestructuur in. Hiervoor kunnen ze gebruik maken van ofwel patronen ofwel een navigatieboom.
 - Content items worden hiermee soms in een navigatieboom gehangen en soms volgen ze regels van het patroon. Zo zal een redacteur een nieuwsbericht aanmaken en dmv het patroon weten we waar dit in de navigatiestructuur staat. Daarentegen zal de relatie tussen overzicht en infopagina's wel effectief door de redacteurs opgegeven worden. Zo hebben we best of both worlds en hoeven de redacteurs niets te doen (patronen) en daar waar ze willen kunnen ze content items héél specifiek een plek geven (navigatieboom) in de navigatiestructuur.
 
-## [4.3.0]: 2022-03 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+## [4.3.0]: 2022-03
+[![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+
 Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten: 
 - Maken en onderhouden van menu's
 - Menu's gaan meteen meertalig cases ondersteunen
@@ -36,19 +64,44 @@ Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten:
 - Wie wat mag doen met menu's gaat via rollen en rechten ingesteld kunnen worden
 - Er wordt een API voorzien om menu data op te halen voor gebruik in de consumers/frontends.
 
+Daarnaast ook nog volgende 
+-  **Content** 
+    - Location picker widget improvements 
+    - Aanpassingen aan de opties van keuzelijst zorgde voor problemen bij bestaande content items die daarmee werken
 
-## [4.2.1.hotfix-2]: 2022-02-24 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+## [1.0.0]: 2022-03
+[![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+- **Verzendmodule** 
+  - De verzendmodule is gemaakt voor PZA om zo automatisch mogelijk nieuwsbrieven naar de pers te sturen. 
+  - Er kunnen verschillende verzendkanalen worden opgezet.
+  - Per kanaal wordt de content bepaalt en waar het naar verzonden moet worden.
+  - SendGrid (e-mail campagne systeem) is de eerste verzendmethode. het systeem voorziet dat andere verzendmethodes ingeplugd kunnen worden.
+  - Er kan ad hoc, één per één en in bulk verstuurd worden al dan niet time based.
+- **Logboek**
+  - Er is een logboek dat de verzendgebeurtenissen weergeeft. 
+  - Het logboek kan ook door andere modules gebruikt worden in het systeem om zo een goe beeld te krijgen wat en wanneer er allemaal gebeurt. 
+  - Het logboek kan een handig hulpmiddel zijn voor troubleshooting. 
+
+## [4.2.1.hotfix-2]: 2022-02-24
+[![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+
 - **Content** 
   - De uitgifte datum van een content item kan ondanks het veld readonly is, toch leeggemaakt worden. 
   - De uitgifte datum wordt niet aangepast aan de laatste publicatiedatum, ook al is dit zo geconfigureerd
 -  **Navigatie:** Fix waarbij we eenvoudige en éénmalig de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
 -  **Preview:** Fix waarbij de preview instelling op site niveau niet correct bewaard werd
 
-## [4.2.1.hotfix-1]: 2022-02-17 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+---
+
+## [4.2.1.hotfix-1]: 2022-02-17
+[![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+
 -  **Navigatie:** Er is een issue ontdekt waarbij redacteurs hun navigatieboom niet meer kunnen kiezen in de keuzelijst. De dropdown toont enkel de eerste 10 entries. We gaan hier in de hotfix zorgen dat er 20 items opgehaald worden, een betere oplossing staat op de backlog weliswaar. Hiermee kunnen de afnemers vandaag meteen verder.  
 
 
-## [4.2.1]: 2022-02-14 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+## [4.2.1]: 2022-02-14
+[![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15727).
 ### Added
 -  **API** 
@@ -96,7 +149,9 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
 -  **Systeem:** Redactie monitor endpoint geeft nu geen errors meer
 
 
-## [4.1.5]: 2022-01-10 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
+## [4.1.5]: 2022-01-10
+[![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
+
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15735).
 ### Changed
 -   **Algemeen:** Verbeterde copy doorheen de applicatie
@@ -126,11 +181,15 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
    - Je kan nu een workflow correct verwijderen op site niveau.
    - Als je een transitie maakt naar dezelfde status, bv van Werkversie naar Werkversie dan worden nu de rechten en de workflow configuratie correct nageleefd.
 
-## 2021-12-23  [![Generic badge](https://img.shields.io/badge/Tabel%20Contrib-PRD-green.svg)]()
+## [1.0.0] 2021-12-23  
+[![Generic badge](https://img.shields.io/badge/Tabel%20Contrib-PRD-green.svg)]()
+
 - De Tabel module is beschikbaar op Productie. Met deze module kan je een tabel toevoegen aan de content. Merk op dat dit een losstaande content component is en niet een onderdeel van een Tekstvak met Opmaak. Je bepaalt zelf de rijen en kolommen en geeft op wat je in elke cell wil plaatsen zoals bv een tekstvak, een telefoonnummer, etc.
 
 
-## [4.1.2]: 2021-12-14 [![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
+## [4.1.2]: 2021-12-14 
+[![Generic badge](https://img.shields.io/badge/Core-PRD-green.svg)]()
+
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15538).
 ### Added
 -  **Algemeen:** Visuele feedback bij het kopiëren van een UUID
@@ -178,3 +237,12 @@ Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa
 	- Bewaren van content item in zijn huidige status, ongeacht de ingestelde workflow geeft nu correcte info weer
 	- Ophalen van site rollen is verbeterd (gaf soms een 403)
 	- Als gebruiker met de "workflow update" rechten kan je nu de instellingen van een workflow bewerken
+
+## Legende
+De release notes zijn chronologisch gesorteerd met de meeste recente release eerst. De badges geven aan over welk onderdeel het gaan en in welk stadia het zich bevindt. 
+- [![Generic badge](https://img.shields.io/badge/Core|Contrib-gray.svg)]() Gaat de release over de core of over een contributie module.
+-  [![Generic badge](https://img.shields.io/badge/Core|Contrib-DEV-yellow.svg)]() zijn alle features die momenteel ontwikkeld worden en nog niet beschikbaar zijn.
+- [![Generic badge](https://img.shields.io/badge/Core|Contrib-ACC-blue.svg)]() zijn alle features die we momenteel aan't testen zijn. Deze zullen weldra gereleased worden.
+- [![Generic badge](https://img.shields.io/badge/Core|Contrib-PRD-green.svg)]() zijn alle features die gereleased zijn voor gebruik.
+
+*The formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), en maakt gebruik van [Semantic Versioning](https://semver.org/spec/v2.0.0.html).* 
