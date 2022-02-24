@@ -13,8 +13,9 @@ Hier vind je de release notes van **GPubP - Content beheer** (aka **De Redactie*
 | [4.3.0](#430-2022-03) 	| Maart 2022 	| Werken met Navigatie Menu's 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
 | [1.0.0](#100-2022-03) 	| Maart 2022 	| Verzendmodule voor (o.a.) nieuwsbrieven 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
 | [1.0.0](#100-2022-03) 	| Maart 2022 	| Logboek module 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
-| [4.2.1.hotfix-2](#421hotfix-2-2022-02-24) 	| 24 feb 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
-| [4.2.1.hotfix-1](#421hotfix-1-2022-02-17) 	| 17 feb 2022 	| Fix voor werken met 10+ navigatiebomen 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
+| [4.2.1.hotfix-3](#421hotfix-3-2022-03-03) 	| 03 Maart 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.2.1.hotfix-2](#421hotfix-2-2022-02-24) 	| 24 Feb 2022 	| Enkele fixes rond uitgifte tijdstip (PZA) | [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
+| [4.2.1.hotfix-1](#421hotfix-1-2022-02-17) 	| 17 Feb 2022 	| Fix voor werken met 10+ navigatiebomen 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
 | [4.2.1](#421-2022-02-14) 	| 14 Feb 2022 	| Uitbreidingen voor PZA 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
 | [4.1.5](#415-2022-01-10) 	| 10 Jan 2022 	| Rubens release voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
 | [1.0.0](#100-2021-12-23) 	| 23 Jan 2022 	| Tabel content component 	| [![Generic badge](https://img.shields.io/badge/Contrib-PROD-Green.svg)]() 	|
@@ -82,19 +83,38 @@ Daarnaast ook nog volgende
   - Het logboek kan ook door andere modules gebruikt worden in het systeem om zo een goe beeld te krijgen wat en wanneer er allemaal gebeurt. 
   - Het logboek kan een handig hulpmiddel zijn voor troubleshooting. 
 
-## [4.2.1.hotfix-2]: 2022-02-24
+## [4.2.1.hotfix-3]: 2022-03-03
 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
 
+Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15792).
+### Added
+- **Navigatie:** Fix waarbij we eenvoudige en éénmalig/tijdelijk de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
+
+### Fixed
+- **Content** 
+  - Views kunnen nu gefiltered worden obv taxonomie term(en)
+  - Fix voor het Organisatie Content Type in het compartiment 'Locatie en contact' (A-Stad)
+  - Transities worden nu ook geladen voor gebruiker met enkel workflow read-rechten
+  - Automatisch starten bij video component is gefixed
+  - Als tenant beheerder kan ik site module data opslaan
+
+
+## [4.2.1.hotfix-2]: 2022-02-24
+[![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+
+Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15788).
+### Fixed
+- **API:** Fix die het duidelijker maakt wanneer een content item gelocked is door een redacteur in de Redactie
 - **Content** 
   - De uitgifte datum van een content item kan ondanks het veld readonly is, toch leeggemaakt worden. 
   - De uitgifte datum wordt niet aangepast aan de laatste publicatiedatum, ook al is dit zo geconfigureerd
--  **Navigatie:** Fix waarbij we eenvoudige en éénmalig de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
--  **Preview:** Fix waarbij de preview instelling op site niveau niet correct bewaard werd
+- **Preview:** Fix waarbij de preview instelling op site niveau niet correct bewaard werd
 
 ---
 
 ## [4.2.1.hotfix-1]: 2022-02-17
 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+
 
 -  **Navigatie:** Er is een issue ontdekt waarbij redacteurs hun navigatieboom niet meer kunnen kiezen in de keuzelijst. De dropdown toont enkel de eerste 10 entries. We gaan hier in de hotfix zorgen dat er 20 items opgehaald worden, een betere oplossing staat op de backlog weliswaar. Hiermee kunnen de afnemers vandaag meteen verder.  
 
