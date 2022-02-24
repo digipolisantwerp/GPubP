@@ -88,16 +88,15 @@ Daarnaast ook nog volgende
 
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15792).
 ### Added
-- **Navigatie:** Fix waarbij we eenvoudige en éénmalig/tijdelijk de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
+- **Navigatie:** Aanpassing waarbij we eenvoudig (tijdelijk) de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
 
 ### Fixed
 - **Content** 
-  - Views kunnen nu gefiltered worden obv taxonomie term(en)
-  - Fix voor het Organisatie Content Type in het compartiment 'Locatie en contact' (A-Stad)
-  - Transities worden nu ook geladen voor gebruiker met enkel workflow read-rechten
+  - Views kunnen nu correct gefiltered worden obv taxonomie term(en)
+  - Het gekozen adres (via de location picker) wordt nu correct bewaard in de redactie
+  - Transities worden nu ook geladen voor gebruiker die enkel workflow read-rechten hebben
   - Automatisch starten bij video component is gefixed
-  - Als tenant beheerder kan ik site module data opslaan
-
+  - Instellingen van de voorvertoning module worden nu correct bewaard
 
 ## [4.2.1.hotfix-2]: 2022-02-24
 [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
