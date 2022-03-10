@@ -10,10 +10,12 @@ Hier vind je de release notes van **GPubP - Content beheer** (aka **De Redactie*
 | [4.4.1](#441-2022) 	| 2022 	| Bynder Beeldenbank en Chat ondersteuning | [![Generic badge](https://img.shields.io/badge/Contrib-TODO-teal.svg)]() 	|
 | [4.4.0](#440-2022-05-30) 	| 30 Mei 2022 	| Meertaligheid 	| [![Generic badge](https://img.shields.io/badge/Core-TODO-teal.svg)]() 	|
 | [4.3.1](#431-2022-05-02) 	| 02 Mei 2022 	| Werken met Navigatie URL's en Navigatiestructuur 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
-| [4.3.0](#430-2022-03-28) 	| 28 Maa 2022 	| Werken met Navigatie Menu's 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.3.0](#430-2022-03-28) 	| 28 Maa 2022 	| Werken met Navigatie Menu's 	| [![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]() 	|
 | [1.0.0](#100-2022-03) 	| Maart 2022 	| Verzendmodule voor (o.a.) nieuwsbrieven 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
 | [1.0.0](#100-2022-03) 	| Maart 2022 	| Logboek module 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
-| [4.2.1.hotfix-3](#421hotfix-3-2022-03-03) 	| 03 Maart 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.2.1.hotfix-5](#421hotfix-5-2022-03-17) 	| 17 Maart 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.2.1.hotfix-4](#421hotfix-4-2022-03-10) 	| 10 Maart 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
+| [4.2.1.hotfix-3](#421hotfix-3-2022-03-03) 	| 03 Maart 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
 | [4.2.1.hotfix-2](#421hotfix-2-2022-02-24) 	| 24 Feb 2022 	| Enkele fixes rond uitgifte tijdstip (PZA) | [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
 | [4.2.1.hotfix-1](#421hotfix-1-2022-02-17) 	| 17 Feb 2022 	| Fix voor werken met 10+ navigatiebomen 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
 | [4.2.1](#421-2022-02-14) 	| 14 Feb 2022 	| Uitbreidingen voor PZA 	| [![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]() 	|
@@ -52,7 +54,9 @@ Navigatiestructuren
 - Content items worden hiermee soms in een navigatieboom gehangen en soms volgen ze regels van het patroon. Zo zal een redacteur een nieuwsbericht aanmaken en dmv het patroon weten we waar dit in de navigatiestructuur staat. Daarentegen zal de relatie tussen overzicht en infopagina's wel effectief door de redacteurs opgegeven worden. Zo hebben we best of both worlds en hoeven de redacteurs niets te doen (patronen) en daar waar ze willen kunnen ze content items héél specifiek een plek geven (navigatieboom) in de navigatiestructuur.
 
 ## [4.3.0]: 2022-03-28
-[![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+[![Generic badge](https://img.shields.io/badge/Core-ACC-blue.svg)]()
+
+Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15728).
 
 Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten: 
 - Maken en onderhouden van menu's
@@ -83,19 +87,37 @@ Daarnaast ook nog volgende
   - Het logboek kan ook door andere modules gebruikt worden in het systeem om zo een goe beeld te krijgen wat en wanneer er allemaal gebeurt. 
   - Het logboek kan een handig hulpmiddel zijn voor troubleshooting. 
 
-## [4.2.1.hotfix-3]: 2022-03-03
+## [4.2.1.hotfix-5]: 2022-03-17
 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
+
+Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15801).
+### Fixed
+- **Content** De cache zal sneller worden opgebouwd waardoor er minder 'oeps, pagina niet gevonden' zal voorkomen
+
+## [4.2.1.hotfix-4]: 2022-03-10
+[![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
+
+Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15793).
+### Added
+- **Navigatie:** Aanpassing waarbij we eenvoudig (tijdelijk) de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
+
+### Fixed
+- **Content**
+  - Automatisch starten bij video component is gefixed
+  - Pagina's kunnen opnieuw worden aangemaakt in de redactie
+  - Transities worden nu ook geladen voor gebruiker die enkel workflow read-rechten hebben
+
+
+## [4.2.1.hotfix-3]: 2022-03-03
+[![Generic badge](https://img.shields.io/badge/Core-PROD-Green.svg)]()
 
 Bekijk de [Jira release notes](https://jira.antwerpen.be/secure/ReleaseNote.jspa?projectId=14114&version=15792).
 ### Added
-- **Navigatie:** Aanpassing waarbij we eenvoudig (tijdelijk) de navigatiestructuur voor A-Stad van Acc naar Prd kunnen overzetten
 
 ### Fixed
 - **Content** 
   - Views kunnen nu correct gefiltered worden obv taxonomie term(en)
   - Het gekozen adres (via de location picker) wordt nu correct bewaard in de redactie
-  - Transities worden nu ook geladen voor gebruiker die enkel workflow read-rechten hebben
-  - Automatisch starten bij video component is gefixed
   - Instellingen van de voorvertoning module worden nu correct bewaard
 
 ## [4.2.1.hotfix-2]: 2022-02-24
