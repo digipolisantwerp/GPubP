@@ -8,9 +8,9 @@ Hier vind je de release notes van **GPubP - Content beheer** (aka **De Redactie*
 | Release 	| Datum 	| Inhoud 	| Status 	|
 |---	|---	|---	|---	|
 | [4.4.1](#441-2022) 	| 2022 	| Bynder Beeldenbank en Chat ondersteuning | [![Generic badge](https://img.shields.io/badge/Contrib-TODO-teal.svg)]() 	|
-| [4.4.0](#440-2022) 	| 2022 	| Meertaligheid 	| [![Generic badge](https://img.shields.io/badge/Core-TODO-teal.svg)]() 	|
-| [4.3.1](#431-2022-05) 	| Mei 2022 	| Werken met Navigatie URL's en Navigatiestructuur 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
-| [4.3.0](#430-2022-03) 	| Maart 2022 	| Werken met Navigatie Menu's 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.4.0](#440-2022-05-30) 	| 30 Mei 2022 	| Meertaligheid 	| [![Generic badge](https://img.shields.io/badge/Core-TODO-teal.svg)]() 	|
+| [4.3.1](#431-2022-05-02) 	| 02 Mei 2022 	| Werken met Navigatie URL's en Navigatiestructuur 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
+| [4.3.0](#430-2022-03-28) 	| 28 Maa 2022 	| Werken met Navigatie Menu's 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
 | [1.0.0](#100-2022-03) 	| Maart 2022 	| Verzendmodule voor (o.a.) nieuwsbrieven 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
 | [1.0.0](#100-2022-03) 	| Maart 2022 	| Logboek module 	| [![Generic badge](https://img.shields.io/badge/Contrib-DEV-yellow.svg)]() 	|
 | [4.2.1.hotfix-3](#421hotfix-3-2022-03-03) 	| 03 Maart 2022 	| Enkele fixes voor A-Stad 	| [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]() 	|
@@ -28,7 +28,7 @@ Hier vind je de release notes van **GPubP - Content beheer** (aka **De Redactie*
 - Beelden in [Bynder](https://www.bynder.com/) kunnen gekozen worden door de redacteur rechtstreeks uit de Redactie.
 - [Teleportel](https://www.teleportel.com/) ondersteuning
 
-## [4.4.0]: 2022
+## [4.4.0]: 2022-05-30
 [![Generic badge](https://img.shields.io/badge/Core-TODO-teal.svg)]()
 - Per site configureer je de talen
 - Allerlei instellingen zoals de site url, preview url gaan taalgevoelig worden
@@ -39,7 +39,7 @@ Hier vind je de release notes van **GPubP - Content beheer** (aka **De Redactie*
 - Bij het maken van een nieuw content item moet eerst nog een taalkeuze gemaakt worden.
 - Per content item kan je eenvoudig zien in welke talen dit reeds vertaald is.
 
-## [4.3.1]: 2022-05 
+## [4.3.1]: 2022-05-02
 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
 
 Deze MTP zal vooral bestaan uit navigatie URL en navigatiestructuur functionaliteiten:
@@ -51,7 +51,7 @@ Navigatiestructuren
 - Content beheerders stellen de navigatiestructuur in. Hiervoor kunnen ze gebruik maken van ofwel patronen ofwel een navigatieboom.
 - Content items worden hiermee soms in een navigatieboom gehangen en soms volgen ze regels van het patroon. Zo zal een redacteur een nieuwsbericht aanmaken en dmv het patroon weten we waar dit in de navigatiestructuur staat. Daarentegen zal de relatie tussen overzicht en infopagina's wel effectief door de redacteurs opgegeven worden. Zo hebben we best of both worlds en hoeven de redacteurs niets te doen (patronen) en daar waar ze willen kunnen ze content items héél specifiek een plek geven (navigatieboom) in de navigatiestructuur.
 
-## [4.3.0]: 2022-03
+## [4.3.0]: 2022-03-28
 [![Generic badge](https://img.shields.io/badge/Core-DEV-yellow.svg)]()
 
 Deze MTP zal vooral bestaan uit navigatie menu functionaliteiten: 
